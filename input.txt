@@ -1,0 +1,1522 @@
+he Internet is a structured, organized system. Before we discuss how
+it works and its relationship to TCP/IP, we first give a brief history of
+the Internet. We then define the concepts of protocols and standards and
+their relationships to each other. We discuss the various organizations that
+are involved in the development of Internet standards. These standards are
+not developed by any specific organization, but rather through a consen-
+sus of users. We discuss the mechanism through which these standards
+originated and matured. Also included in this introductory chapter is a
+section on Internet administrative groups.
+OBJECTIVES
+The chapter has several objectives:
+❑
+To give a brief history of the Internet.
+❑
+To give the definition of the two often-used terms in the discussion of
+the Internet:
+protocol
+and
+standard
+.
+❑
+To categorize standard organizations involved in the Internet and give
+a brief discussion of each.
+❑
+To define Internet Standards and explain the mechanism through
+which these standards are developed.
+❑
+To discuss the Internet administration and give a brief description of
+each branch.
+T
+3
+1.1 A BRIEF HISTORY
+A
+network
+is a group of connected, communicating devices such as computers and
+printers. An internet (note the lowercase
+i
+) is two or more networks that can communi-
+cate with each other. The most notable internet is called the
+Internet
+(uppercase
+I
+),
+composed of hundreds of thousands of interconnected networks. Private individuals as
+well as various organizations such as government agencies, schools, research facilities,
+corporations, and libraries in more than 100 countries use the Internet. Millions
+of people are users. Yet this extraordinary communication system only came into being
+in 1969.
+ARPANET
+In the mid-1960s, mainframe computers in research organizations were stand-alone
+devices. Computers from different manufacturers were unable to communicate with
+one another. The
+Adworks are also connected to each other by private switching stations
+called peering points. Backbone ISPs normally operate at a high data rate (10 Gbps, for
+example).
+Regional ISPs
+Regional ISPs are small ISPs that are connected to one or more backbone ISPs. They
+are at the second level of hierarchy with a lesser data rate.
+Local ISPs
+Local ISPs provide direct service to the end users. The local ISPs can be connected
+to regional ISPs or directly to backbone ISPs. Most end users are connected to the
+local ISPs. Note that in this sense, a local ISP can be a company that just provides
+Internet services, a corporation with a network to supply services to its own employ-
+ees, or a nonprofit organization, such as a college or a university, that runs its own
+
+1983.
+TCP/IP becomes the official protocol for ARPANET.
+❑
+1983.
+MILNET was born.
+❑
+1986.
+NSFNET established.
+❑
+1990.
+ARPANET decommissioned and replaced by NSFNET.
+❑
+1995.
+NSFNET goes back to being a research network.
+❑
+1995.
+Companies known as
+Internet Service Providers (ISPs)
+started.
+CHAPTER 1 INTRODUCTION
+7
+Growth of the Internet
+The Internet has grown tremendously. In just a few decades, the number of networks has
+increased from tens to hundreds of thousands. Concurrently, the number of computers
+connected to the networks has grown from hundreds to hundreds of millions. The Internet
+is still growing. Factors that have an impact on this growth include the following:
+❑
+New Protocols.
+New protocols need to be added and deprecated ones need to
+be removed. For example, a protocol superior in many respects to IPv4
+has been approved as a standard but is not yet fully implemented (see IPv6,
+Chapter 27).
+❑
+New Technology.
+New technologies are under development that will increase the
+capacity of networks and provide more bandwidth to the Internet’s users.
+❑
+Increasing Use of Multimedia.
+It is predicted that the Internet, once just a vehicle
+to share data, will be used more and more for multimedia (audio and video).
+1.2 PROTOCOLS AND STANDARDS
+In this section, we define two widely used terms: protocols and standards. First, we
+define
+protocol,
+which is synonymous with “rule.” Then we discuss
+standards,
+which
+are agreed-upon rules.
+Protocols
+Communication between two people or two devices needs to follow some protocol. A
+protocol
+is a set of rules that governs communication. For example, in a face-to-face
+communication between two persons, there is a set of implicit rules in each culture that
+define how two persons should start the communication, how to continue the communi-
+cation, and how to end the communication. Similarly, in a telephone conversation, there
+are a set of rules that we need to follow. There is a rule how to make connection (dial-
+ing the telephone number), how to respond to the call (picking up the receiver), how to
+greet, how to let the communication flow smoothly by listening when the other party is
+talking, and finally how to end the communication (hanging up).
+In computer networks, communication occurs between entities in different sys-
+tems. An entity is anything capable of sending or receiving information. However, two
+entities cannot simply send bit streams to each other and expect to be understood. For
+communication to occur, the entities must agree on a protocol. A protocol defines what
+is communicated, how it is communicated, and when it is communicated. The key ele-
+ments of a protocol are syntax, semantics, and timing.
+❑
+Syntax.
+Syntax refers to the structure or format of the data, meaning the order in
+which they are presented. For example, a simple protocol might expect the first
+8 bits of data to be the address of the sender, the second 8 bits to be the address of
+the receiver, and the rest of the stream to be the message itself. The data order is
+also applied to the order of bits when they are stored or transmitted. Different com-
+puters may store data in different bit orders. When these computers communicate,
+this difference needs to be resolved.
+8
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+❑
+Semantics.
+Semantics refers to the meaning of each section of bits. How is a par-
+ticular pattern to be interpreted, and what action is to be taken based on that inter-
+pretation? For example, does an address identify the route to be taken or the final
+destination of the message?
+❑
+Timing.
+Timing refers to two characteristics: when data should be sent and how
+fast it can be sent. For example, if a sender produces data at 100 megabits per sec-
+ond (100 Mbps) but the receiver can process data at only 1 Mbps, the transmission
+will overload the receiver and data will be largely lost.
+Standards
+Standards are essential in creating and maintaining an open and competitive market for
+equipment manufacturers and also in guaranteeing national and international inter-
+operability of data and telecommunications technology and processes. They provide
+guidelines to manufacturers, vendors, government agencies, and other service providers
+to ensure the kind of interconnectivity necessary in today’s marketplace and in interna-
+tional communications.
+Data communication standards fall into two categories:
+de facto
+(meaning “by
+fact”
+or “by convention”) and
+de jure
+(meaning
+“
+by law” or “by regulation”).
+❑
+De facto.
+Standards that have not been approved by an organized body but have
+been adopted as standards through widespread use are
+de facto standards.
+De
+facto standards are often established originally by manufacturers that seek to
+define the functionality of a new product or technology. Examples of de facto stan-
+dards are MS Office and various DVD standards.
+❑
+De jure.
+De jure standards
+are those that have been legislated by an officially rec-
+ognized body.
+1.3 STANDARDS ORGANIZATIONS
+Standards are developed through the cooperation of standards creation committees,
+forums, and government regulatory agencies.
+Standards Creation Committees
+While many organizations are dedicated to the establishment of standards, data com-
+munications in North America rely primarily on those published by the following:
+❑
+International Standards Organization (ISO).
+The International Standards Orga-
+nization (ISO; also referred to as the International Organization for Standardiza-
+tion) is a multinational body whose membership is drawn mainly from the
+standards creation committees of various governments throughout the world. Cre-
+ated in 1947, the ISO is an entirely voluntary organization dedicated to worldwide
+agreement on international standards. With a membership that currently includes
+representative bodies from many industrialized nations, it aims to facilitate the
+international exchange of goods and services by providing models for compatibility,
+improved quality, increased productivity, and decreased prices. The ISO is active
+CHAPTER 1 INTRODUCTION 9
+in developing cooperation in the realms of scientific, technological, and economic
+activity. Of primary concern to this book are the ISO’s efforts in the field of infor-
+mation technology, which have resulted in the creation of the Open Systems Inter-
+connection (OSI) model for network communications. The United States is
+represented in the ISO by ANSI.
+❑ International Telecommunications Union–Telecommunications Standards Sec-
+tor (ITU-T). By the early 1970s, a number of countries were defining national stan-
+dards for telecommunications, but there was still little international compatibility. The
+United Nations responded by forming, as part of its International Telecommunications
+Union (ITU), a committee, the Consultative Committee for International Telegra-
+phy and Telephony (CCITT). This committee was devoted to the research and estab-
+lishment of standards for telecommunications in general and phone and data systems
+in particular. On March 1, 1993, the name of this committee was changed to the Inter-
+national Telecommunications Union–Telecommunications Standards Sector (ITU-T).
+❑ American National Standards Institute (ANSI). Despite its name, the American
+National Standards Institute (ANSI) is a completely private, nonprofit corporation
+not affiliated with the U.S. federal government. However, all ANSI activities are
+undertaken with the welfare of the United States and its citizens occupying primary
+importance. ANSI’s expressed aims include serving as the national coordinating
+institution for voluntary standardization in the United States, furthering the adoption
+of standards as a way of advancing the U.S. economy, and ensuring the participation
+and protection of the public interests. ANSI members include professional societies,
+industry associations, governmental and regulatory bodies, and consumer groups.
+❑ Institute of Electrical and Electronics Engineers (IEEE). The Institute of Electri-
+cal and Electronics Engineers (IEEE) is the largest professional engineering society
+in the world. International in scope, it aims to advance theory, creativity, and product
+quality in the fields of electrical engineering, electronics, and radio as well as in all
+related branches of engineering. As one of its goals, the IEEE oversees the develop-
+ment and adoption of international standards for computing and communication.
+❑ Electronic Industries Association (EIA). Aligned with ANSI, the Electronic
+Industries Association (EIA) is a nonprofit organization devoted to the promotion
+of electronics manufacturing concerns. Its activities include public awareness edu-
+cation and lobbying efforts in addition to standards development. In the field of
+information technology, the EIA has made significant contributions by defining
+physical connection interfaces and electronic signaling specifications for data
+communications.
+❑ World Wide Web Consortium (W3C). Tim Berners-Lee founded this consortium
+at Massachusetts Institutue of Technology Laboratory for Computer Science. It
+was founded to provide computability in industry for new standards. W3C has cre-
+ated regional offices around the world.
+❑ Open Mobile Alliance (OMA). The standards organizaion OMA was created to
+gather different forums in computer networking and wireless technology under the
+umbrella of one single authority. Its mission is to provide unified standards for
+application protocols.
+10 PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Forums
+Telecommunications technology development is moving faster than the ability of stan-
+dards committees to ratify standards. Standards committees are procedural bodies and
+by nature slow moving. To accommodate the need for working models and agreements
+and to facilitate the standardization process, many special-interest groups have devel-
+oped forums made up of representatives from interested corporations. The forums
+work with universities and users to test, evaluate, and standardize new technologies. By
+concentrating their efforts on a particular technology, the forums are able to speed
+acceptance and use of those technologies in the telecommunications community. The
+forums present their conclusions to the standards bodies. Some important forums for
+the telecommunications industry include the following:
+❑ Frame Relay Forum. The Frame Relay Forum was formed by Digital Equipment Cor-
+poration, Northern Telecom, Cisco, and StrataCom to promote the acceptance and
+implementation of Frame Relay. Today, it has around 40 members representing North
+America, Europe, and the Pacific Rim. Issues under review include flow control, encap-
+sulation, translation, and multicasting. The forum’s results are submitted to the ISO.
+❑ ATM Forum. The ATM Forum promotes the acceptance and use of Asynchronous
+Transfer Mode (ATM) technology. The ATM Forum is made up of customer prem-
+ises equipment (e.g., PBX systems) vendors and central office (e.g., telephone
+exchange) providers. It is concerned with the standardization of services to ensure
+interoperability.
+❑ Universal Plug and Play (UPnP) Forum. The UPnP forum is a computer net-
+work forum that supports and promotes simplifying the implementation of
+networks by creating zero-configuration networking devices. A UPnP-compatible
+device can join a network without any configuration.
+Regulatory Agencies
+All communications technology is subject to regulation by government agencies such
+as the Federal Communications Commission in the United States. The purpose of these
+agencies is to protect the public interest by regulating radio, television, and wire/cable
+communications.
+❑ Federal Communications Commission (FCC). The Federal Communications
+Commission (FCC) has authority over interstate and international commerce as it
+relates to communications.
+1.4 INTERNET STANDARDS
+An Internet standard is a thoroughly tested specification that is useful to and adhered to
+by those who work with the Internet. It is a formalized regulation that must be followed.
+There is a strict procedure by which a specification attains Internet standard status. A spec-
+ification begins as an Internet draft. An Internet draft is a working document (a work in
+progress) with no official status and a six-month lifetime. Upon recommendation from the
+The websites for the above organizations are given in Appendix G.
+CHAPTER 1 INTRODUCTION
+11
+Internet authorities, a draft may be published as a
+Request for Comment (RFC).
+Each
+RFC is edited, assigned a number, and made available to all interested parties.
+RFCs go through maturity levels and are categorized according to their require-
+ment level.
+Maturity Levels
+An RFC, during its lifetime, falls into one of six
+maturity levels:
+proposed standard, draft
+standard, Internet standard, historic, experimental, and informational (see Figure 1.2).
+Proposed Standard
+A proposed standard is a specification that is stable, well understood, and of sufficient
+interest to the Internet community. At this level, the specification is usually tested and
+implemented by several different groups.
+Draft Standard
+A proposed standard is elevated to draft standard status after at least two successful indepen-
+dent and interoperable implementations. Barring difficulties, a draft standard, with modifica-
+tions if specific problems are encountered, normally becomes an Internet standard.
+Internet Standard
+A draft standard reaches Internet standard status after demonstrations of successful
+implementation.
+Historic
+The historic RFCs are significant from a historical perspective. They either have been
+superseded by later specifications or have never passed the necessary maturity levels to
+become an Internet standard.
+Experimental
+An RFC classified as experimental describes work related to an experimental situation
+that does not affect the operation of the Internet. Such an RFC should not be imple-
+mented in any functional Internet service.
+Figure 1.2
+Maturity levels of an RFC
+Proposed standard Experimental Informational
+Draft standard
+Six months and two tries
+Four months and two tries
+Internet standard
+Historic
+Internet draft
+12
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Informational
+An RFC classified as informational contains general, historical, or tutorial information
+related to the Internet. It is usually written by someone in a non-Internet organization,
+such as a vendor.
+Requirement Levels
+RFCs are classified into five
+requirement levels:
+required, recommended, elective,
+limited use, and not recommended (see Figure 1.3).
+Required
+An RFC is labeled
+required
+if it must be implemented by all Internet systems to achieve
+minimum conformance. For example, IP (Chapter 7) and ICMP (Chapter 9) are
+required protocols.
+Recommended
+An RFC labeled
+recommended
+is not required for minimum conformance; it is recom-
+mended because of its usefulness. For example, FTP (Chapter 21) and TELNET
+(Chapter 20) are recommended protocols.
+Elective
+An RFC labeled
+elective
+is not required and not recommended. However, a system can
+use it for its own benefit.
+Limited Use
+An RFC labeled
+limited
+use
+should be used only in limited situations. Most of the
+experimental RFCs fall under this category.
+Not Recommended
+An RFC labeled
+not recommended
+is inappropriate for general use. Normally a historic
+(deprecated) RFC may fall under this category.
+Figure 1.3
+Requirement levels of an RFC
+RFCs can be found at http://www.rfc-editor.org.
+Required
+Recommended
+Requirement levels Elective
+Limited use
+Not recommended
+CHAPTER 1 INTRODUCTION
+13
+1.5 INTERNET ADMINISTRATION
+The Internet, with its roots primarily in the research domain, has evolved and gained
+a broader user base with significant commercial activity. Various groups that coordinate
+Internet issues have guided this growth and development. Appendix G gives the addresses,
+e-mail addresses, and telephone numbers for some of these groups. Figure 1.4
+shows the general organization of Internet administration.
+Internet Society (ISOC)
+The
+Internet Society (ISOC)
+is an international, nonprofit organization formed in
+1992 to provide support for the Internet standards process. ISOC accomplishes this
+through maintaining and supporting other Internet administrative bodies such as IAB,
+IETF, IRTF, and IANA (see the following sections). ISOC also promotes research and
+other scholarly activities relating to the Internet.
+Internet Architecture Board (IAB)
+The
+Internet Architecture Board (IAB)
+is the technical advisor to the ISOC. The
+main purposes of the IAB are to oversee the continuing development of the TCP/IP
+Protocol Suite and to serve in a technical advisory capacity to research members of the
+Internet community. IAB accomplishes this through its two primary components, the
+Internet Engineering Task Force (IETF) and the Internet Research Task Force (IRTF).
+Another responsibility of the IAB is the editorial management of the RFCs, described
+earlier in this chapter. IAB is also the external liaison between the Internet and other
+standards organizations and forums.
+Internet Engineering Task Force (IETF)
+The
+Internet Engineering Task Force (IETF)
+is a forum of working groups man-
+aged by the Internet Engineering Steering Group (IESG). IETF is responsible for
+identifying operational problems and proposing solutions to these problems. IETF
+Figure 1.4
+Internet administration
+IETF IRTF
+RG RG
+RG RG
+IESG IRSG
+Area Area
+WG WG WG WG
+ISOC
+IAB
+14 PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+also develops and reviews specifications intended as Internet standards. The working
+groups are collected into areas, and each area concentrates on a specific topic. Cur-
+rently nine areas have been defined, although this is by no means a hard and fast
+number. The areas are:
+❑ Applications
+❑ Internet protocols
+❑ Routing
+❑ Operations
+❑ User services
+❑ Network management
+❑ Transport
+❑ Internet protocol next generation (IPng)
+❑ Security
+Internet Research Task Force (IRTF)
+The Internet Research Task Force (IRTF) is a forum of working groups managed by
+the Internet Research Steering Group (IRSG). IRTF focuses on long-term research top-
+ics related to Internet protocols, applications, architecture, and technology.
+Internet Assigned Numbers Authority (IANA) and Internet
+Corporation for Assigned Names and Numbers (ICANN)
+The Internet Assigned Numbers Authority (IANA), supported by the U.S. govern-
+ment, was responsible for the management of Internet domain names and addresses
+until October 1998. At that time the Internet Corporation for Assigned Names and
+Numbers (ICANN), a private nonprofit corporation managed by an international
+board, assumed IANA operations.
+Network Information Center (NIC)
+The Network Information Center (NIC) is responsible for collecting and distributing
+information about TCP/IP protocols.
+1.6 FURTHER READING
+For more details about subjects discussed in this chapter, we recommend the following
+books and websites. The items enclosed in brackets refer to the reference list at the end
+of the book.
+The addresses and websites for Internet organizations can be found in Appendix G.
+CHAPTER 1 INTRODUCTION
+15
+Books and Papers
+Several books and papers give an easy but thorough coverage of Internet history includ-
+ing [Seg 98], [Lei et al. 98], [Kle 04], [Cer 89], and [Jen et al. 86].
+Websites
+The following websites give more information about topics discussed in this chapter.
+1.7 KEY TERMS
+1.8 SUMMARY
+❑
+A network is a group of connected, communicating devices. An internet is two or
+more networks that can communicate with each other. The most notable internet is
+called the Internet, composed of hundreds of thousands of interconnected networks.
+❑
+The history of internetworking started with ARPA in the mid-1960s. The birth of
+the Internet can be associated with the work of Cerf and Kahn and the invention
+ietf.org The site of IETF
+w3c.org The site of W3C standard organization
+Advanced Research Projects Agency
+(ARPA)
+Internet draft
+Internet Engineering Task Force (IETF)
+American National Standards Institute (ANSI) Internet Research Task Force (IRTF)
+ANSNET Internet Service Provider (ISP)
+ARPANET Internet Society (ISOC)
+ATM Forum Internet standard
+Consultative Committee for International
+Telegraphy and Telephony (CCITT)
+Internet Protocol (IP)
+maturity levels
+CSNET MILNET
+de facto standards network
+de jure standards network access points (NAPs)
+Electronic Industries Association (EIA) Network Information Center (NIC)
+Federal Communications Commission (FCC) NSFNET
+Frame Relay Forum protocol
+Institute of Electrical and Electronics
+Engineers (IEEE)
+Open Mobile Alliance (OMA)
+Request for Comment (RFC)
+International Standards Organization (ISO) requirement levels
+International Telecommunications
+Union–Telecommunications Standards
+Sector (ITUT)
+semantics
+syntax
+timing
+Internet Architecture Board (IAB) Transmission Control Protocol (TCP)
+Internet Assigned Numbers Authority (IANA) Universal Plug and Play (UPnP) Forum
+Internet Corporation for Assigned Names and
+Numbers (ICANN)
+World Wide Web Consortium (W3C)
+16 PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+of a gateway to connect networks. In 1977, the Defense Communication Agency
+(DCA) took the responsibility of the ARPANET and used two protocols called
+TCP and IP to handle the routing of datagrams between individual networks.
+MILNET, CSNET, NSFNET, ANSNET, are all evolved from the ARPANET.
+❑ The Internet today is made up of many wide and local area networks joined by
+connecting devices and switching stations. Today most end users who want Inter-
+net connection use the services of Internet service providers (ISPs). There are
+backbone ISPs, regional ISPs, and local ISPs.
+❑ A protocol is a set of rules that governs communication. The key elements of a pro-
+tocol are syntax, semantics, and timing. In computer networks, communication
+occurs between entities in different systems. For communication to occur, the enti-
+ties must agree on a protocol. A protocol defines what is communicated, how it is
+communicated, and when it is communicated.
+❑ Standards are essential in creating and maintaining an open and competitive mar-
+ket. They provide guidelines to manufacturers, vendors, government agencies, and
+other service providers to ensure the kind of interconnectivity necessary in today’s
+marketplace and in international communications. Data communication standards
+fall into two categories: de facto and de jure.
+❑ An Internet standard is a thoroughly tested specification that is useful to and
+adhered to by those who work with the Internet. An Internet draft is a working doc-
+ument (a work in progress) with no official status and a six-month lifetime. Upon
+recommendation from the Internet authorities, a draft may be published as a
+Request for Comment (RFC). Each RFC is edited, assigned a number, and made
+available to all interested parties. RFCs go through maturity levels and are catego-
+rized according to their requirement level.
+❑ The Internet administration has evolved with the Internet. ISOC promotes research
+and activities. IAB is the technical advisor to the ISOC. IETF is a forum of work-
+ing groups responsible for operational problems. IRTF is a forum of working
+groups focusing on long-term research topics. ICANN is responsible for the man-
+agement of Internet domain names and addresses. NIC is responsible for collecting
+and distributing information about TCP/IP protocols.
+1.9 PRACTICE SET
+Exercises
+1. Use the Internet to find the number of RFCs.
+2. Use the Internet to find the subject matter of RFCs 2418 and 1603.
+3. Use the Internet to find the RFC that discusses the IRTF working group guidelines
+and procedures.
+4. Use the Internet to find two examples of historic RFCs.
+5. Use the Internet to find two examples of experimental RFCs.
+CHAPTER 1 INTRODUCTION 17
+6. Use the Internet to find two examples of informational RFCs.
+7. Use the Internet to find the RFC that discusses the FTP application.
+8. Use the Internet to find the RFC for the Internet Protocol (IP).
+9. Use the Internet to find the RFC for the Transmission Control Protocol (TCP).
+10. Use the Internet to find the RFC that details the Internet standards process.
+Research Activities
+11. Research and find three standards developed by ITU-T.
+12. Research and find three standards developed by ANSI.
+13. EIA has developed some standards for interfaces. Research and find two of these
+standards. What is EIA 232?
+14. Research and find three regulations devised by FCC concerning AM and FM
+transmission.
+CHAPTER
+2
+18
+2
+The OSI Model and
+the TCP/IP Protocol Suite
+he layered model that dominated data communication and network-
+ing literature before 1990 was the
+Open Systems Interconnection
+(OSI) model.
+Everyone believed that the OSI model would become the
+ultimate standard for data communications—but this did not happen. The
+TCP/IP protocol suite
+became the dominant commercial architecture
+because it was used and tested extensively in the Internet; the OSI model
+was never fully implemented.
+In this chapter, we first briefly discuss the OSI model and then we
+concentrate on TCP/IP as a protocol suite.
+OBJECTIVES
+The chapter has several objectives:
+❑
+To discuss the idea of multiple layering in data communication and
+networking and the interrelationship between layers.
+❑
+To discuss the OSI model and its layer architecture and to show the
+interface between the layers.
+❑
+To briefly discuss the functions of each layer in the OSI model.
+❑
+To introduce the TCP/IP protocol suite and compare its layers with
+the ones in the OSI model.
+❑
+To show the functionality of each layer in the TCP/IP protocol with
+some examples.
+❑
+To discuss the addressing mechanism used in some layers of the
+TCP/IP protocol suite for the delivery of a message from the source
+to the destination.
+T
+19
+2.1 PROTOCOL LAYERS
+In Chapter 1, we discussed that a protocol is required when two entities need to com-
+municate. When communication is not simple, we may divide the complex task of
+communication into several layers. In this case, we may need several protocols, one for
+each layer.
+Let us use a scenario in communication in which the role of protocol layering may
+be better understood. We use two examples. In the first example, communication is so
+simple that it can occur in only one layer. In the second example, we need three layers.
+Example 2.1
+Assume Maria and Ann are neighbors with a lot of common ideas. However, Maria speaks only
+Spanish, and Ann speaks only English. Since both have learned the sign language in their child-
+hood, they enjoy meeting in a cafe a couple of days per week and exchange their ideas using
+signs. Occasionally, they also use a bilingual dictionary. Communication is face to face and hap-
+pens in one layer as shown in Figure 2.1.
+Example 2.2
+Now assume that Ann has to move to another town because of her job. Before she moves, the
+two meet for the last time in the same cafe. Although both are sad, Maria surprises Ann when
+she opens a packet that contains two small machines. The first machine can scan and transform
+a letter in English to a secret code or vice versa. The other machine can scan and translate a
+letter in Spanish to the same secret code or vice versa. Ann takes the first machine; Maria keeps
+the second one. The two friends can still communicate using the secret code, as shown in
+Figure 2.2.
+Communication between Maria and Ann happens as follows. At the third layer, Maria writes
+a letter in Spanish, the language she is comfortable with. She then uses the translator machine
+that scans the letter and creates a letter in the secret code. Maria then puts the letter in an envelop
+and drops it to the post office box. The letter is carried by the post office truck to the post office of
+the city where Ann lives now. In the post office, the letter is delivered to the Ann residence. Ann
+uses her own machine to change the secret code to a letter in the English language. The commu-
+nication from Ann to Maria uses the same process, but in the reverse direction. The communica-
+tion in both directions is carried in the secret code, a language that neither Maria nor Ann
+understands, but through the layered communication, they can exchange ideas.
+Figure 2.1
+Example 2.1
+Maria Ann
+Layer 1
+Signs
+Layer 1
+20
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Hierarchy
+Using Example 2.2, there are three different activities at the sender site and another
+three activities at the receiver site. The task of transporting the letter between the
+sender and the receiver is done by the carrier. Something that is not obvious immedi-
+ately is that the tasks must be done in the order given in the hierarchy. At the sender
+site, the letter must be written, translated to secret code, and dropped in the mailbox
+before being picked up by the letter carrier and delivered to the post office. At the
+receiver site, the letter must be dropped in the recipient mailbox before being picked
+up and read by the recipient.
+Services
+Each layer at the sending site uses the services of the layer immediately below it. The
+sender at the higher layer uses the services of the middle layer. The middle layer uses
+the services of the lower layer. The lower layer uses the services of the carrier.
+2.2 THE OSI MODEL
+Established in 1947, the
+International Standards Organization (ISO)
+is a multi-
+national body dedicated to worldwide agreement on international standards. Almost
+three-fourths of countries in the world are represented in the ISO. An ISO standard that
+covers all aspects of network communications is the Open Systems Interconnection
+(OSI) model. It was first introduced in the late 1970s.
+An
+open system
+is a set of protocols that allows any two different systems to com-
+municate regardless of their underlying architecture. The purpose of the OSI model is
+Figure 2.2
+Example 2.2
+ISO is the organization; OSI is the model.
+Maria Ann
+Translator
+Post Office
+Layer 3 Layer 3
+Layer 2 Layer 2
+Layer 1 Layer 1
+Spanish
+Secret code
+Secret code
+English
+US Post US Post
+Translator
+Post Office
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE
+21
+to show how to facilitate communication between different systems without requiring
+changes to the logic of the underlying hardware and software. The OSI model is not a
+protocol; it is a model for understanding and designing a network architecture that is
+flexible, robust, and interoperable. The OSI model was intended to be the basis for the
+creation of the protocols in the OSI stack.
+The OSI model is a layered framework for the design of network systems that
+allows communication between all types of computer systems. It consists of seven sep-
+arate but related layers, each of which defines a part of the process of moving information
+across a network (see Figure 2.3). Understanding the fundamentals of the OSI model
+provides a solid basis for exploring data communications.
+Layered Architecture
+The OSI model is composed of seven ordered layers: physical (layer 1), data link
+(layer 2), network (layer 3), transport (layer 4), session (layer 5), presentation (layer 6),
+and application (layer 7). Figure 2.4 shows the layers involved when a message is sent
+from device A to device B. As the message travels from A to B, it may pass through
+many intermediate nodes. These intermediate nodes usually involve only the first three
+layers of the OSI model.
+In developing the model, the designers distilled the process of transmitting data to
+its most fundamental elements. They identified which networking functions had related
+uses and collected those functions into discrete groups that became the layers. Each
+layer defines a family of functions distinct from those of the other layers. By defining
+and localizing functionality in this fashion, the designers created an architecture that is
+both comprehensive and flexible. Most important, the OSI model allows complete
+interoperability between otherwise incompatible systems.
+Within a single machine, each layer calls upon the services of the layer just below
+it. Layer 3, for example, uses the services provided by layer 2 and provides services for
+layer 4. Between machines, layer
+x
+on one machine logically communicates with layer
+x
+on another machine. This communication is governed by an agreed-upon series of rules
+and conventions called protocols.
+Figure 2.3
+The OSI model
+Transport
+Application
+Presentation
+Session
+Network
+Data link
+Physical Layer 1
+Layer 2
+Layer 3
+Layer 4
+Layer 5
+Layer 6
+Layer 7
+22
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Layer-to-Layer Communication
+In Figure 2.4, device A sends a message to device B (through intermediate nodes). At
+the sending site, the message is moved down from layer 7 to layer 1. At layer 1 the
+entire package is converted to a form that can be transferred to the receiving site. At the
+receiving site, the message is moved up from layer 1 to layer 7.
+Interfaces between Layers
+The passing of the data and network information down through the layers of the send-
+ing device and back up through the layers of the receiving device is made possible by
+an
+interface
+between each pair of adjacent layers. Each interface defines what informa-
+tion and services a layer must provide for the layer above it. Well-defined interfaces and
+layer functions provide modularity to a network. As long as a layer provides the
+expected services to the layer above it, the specific implementation of its functions can
+be modified or replaced without requiring changes to the surrounding layers.
+Organization of the Layers
+The seven layers can be thought of as belonging to three subgroups. Layers 1, 2, and
+3—physical, data link, and network—are the network support layers; they deal with
+the physical aspects of moving data from one device to another (such as electrical
+specifications, physical connections, physical addressing, and transport timing and
+reliability). Layers 5, 6, and 7—session, presentation, and application—can be
+thought of as the user support layers; they allow interoperability among unrelated
+software systems. Layer 4, the transport layer, links the two subgroups and ensures
+that what the lower layers have transmitted is in a form that the upper layers can use.
+Figure 2.4
+OSI layers
+Application
+Layer-to-layer communication (7th layer)
+Layer-to-layer communication (6th layer)
+Layer-to-layer communication (5th layer)
+Layer-to-layer communication (4th layer)
+Intermediate
+node
+7-6 interface
+Presentation
+6-5 interface
+Session
+5-4 interface
+Transport
+4-3 interface
+Network
+3-2 interface
+Data link
+2-1 interface
+Physical
+7
+6
+5
+4
+3
+2
+1
+7
+6
+5
+4
+3
+2
+1
+Application
+7-6 interface
+Presentation
+6-5 interface
+Session
+5-4 interface
+Transport
+4-3 interface
+Network
+3-2 interface
+Data link
+2-1 interface
+Physical
+Network
+Data link
+Physical
+Network
+Data link
+Physical
+Physical communication
+3rd
+2nd
+1st
+3rd
+2nd
+1st
+3rd
+2nd
+1st
+Device A Device B
+Intermediate
+node
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE
+23
+The upper OSI layers are almost always implemented in software; lower layers are a
+combination of hardware and software, except for the physical layer, which is mostly
+hardware.
+In Figure 2.5, which gives an overall view of the OSI layers, D7 data means the
+data unit at layer 7, D6 data means the data unit at layer 6, and so on. The process
+starts at layer 7 (the application layer), then moves from layer to layer in descending,
+sequential order. At each layer, a header can be added to the data unit. At layer 2, a
+trailer may also be added. When the formatted data unit passes through the physical
+layer (layer 1), it is changed into an electromagnetic signal and transported along a
+physical link.
+Upon reaching its destination, the signal passes into layer 1 and is transformed
+back into digital form. The data units then move back up through the OSI layers. As
+each block of data reaches the next higher layer, the headers and trailers attached to it at
+the corresponding sending layer are removed, and actions appropriate to that layer are
+taken. By the time it reaches layer 7, the message is again in a form appropriate to the
+application and is made available to the recipient.
+Encapsulation
+Figure 2.5 reveals another aspect of data communications in the OSI model: encapsula-
+tion. A packet at level 7 is encapsulated in the packet at level 6. The whole packet at
+level 6 is encapsulated in a packet at level 5, and so on.
+In other words, the data part of a packet at level
+N
+is carrying the whole packet
+(data and overhead) from level
+N
++
+1. The concept is called encapsulation because level
+N
+is not aware what part of the encapsulated packet is data and what part is the header
+or trailer. For level
+N
+, the whole packet coming from level
+N
++
+1 is treated as one
+integral unit.
+Figure 2.5
+An exchange using the OSI model
+D7
+D6 H6
+H7
+H5
+H4
+H3
+H2 T2
+D5
+D4
+D3
+D2
+010101010101101010000010000 H1
+D7
+D6 H6
+H7
+H5
+H4
+H3
+H2 T2
+D5
+D4
+D3
+D2
+010101010101101010000010000 H1
+Transmission medium
+24
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Layers in the OSI Model
+In this section we briefly describe the functions of each layer in the OSI model.
+Physical Layer
+The
+physical layer
+coordinates the functions required to carry a bit stream over a physi-
+cal medium. It deals with the mechanical and electrical specifications of the interface and
+transmission media. It also defines the procedures and functions that physical devices
+and interfaces have to perform for transmission to occur.
+The physical layer is also concerned with the following:
+❑
+Physical characteristics of interfaces and media.
+The physical layer defines the
+characteristics of the interface between the devices and the transmission media. It
+also defines the type of transmission media (see Chapter 3).
+❑
+Representation of bits.
+The physical layer data consists of a stream of
+bits
+(sequence of 0s or 1s) with no interpretation. To be transmitted, bits must be
+encoded into signals—electrical or optical. The physical layer defines the type of
+encoding
+(how 0s and 1s are changed to signals).
+❑
+Data rate.
+The
+transmission rate
+—the number of bits sent each second—is also
+defined by the physical layer. In other words, the physical layer defines the dura-
+tion of a bit, which is how long it lasts.
+❑
+Synchronization of bits.
+The sender and receiver must not only use the same bit
+rate but must also be synchronized at the bit level. In other words, the sender and
+the receiver clocks must be synchronized.
+❑
+Line configuration.
+The physical layer is concerned with the connection of
+devices to the media. In a
+point-to-point configuration,
+two devices are con-
+nected together through a dedicated link. In a
+multipoint configuration,
+a link is
+shared between several devices.
+❑
+Physical topology.
+The physical topology defines how devices are connected to
+make a network. Devices can be connected using a
+mesh topology
+(every device
+connected to every other device), a
+star topology
+(devices are connected through a
+central device), a
+ring topology
+(each device is connected to the next, forming a
+ring), or a
+bus topology
+(every device on a common link).
+❑
+Transmission mode.
+The physical layer also defines the direction of transmission
+between two devices: simplex, half-duplex, or full-duplex. In the
+simplex mode,
+only one device can send; the other can only receive. The simplex mode is a one-
+way communication. In the
+half-duplex mode,
+two devices can send and receive,
+but not at the same time. In a
+full-duplex
+(or simply duplex)
+mode,
+two devices
+can send and receive at the same time.
+The physical layer is responsible for moving individual bits from one
+(node) to the next.
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE
+25
+Data Link Layer
+The
+data link layer
+transforms the physical layer, a raw transmission facility, to a reli-
+able link. It makes the physical layer appear error-free to the upper layer (network
+layer). Other responsibilities of the data link layer include the following:
+❑
+Framing.
+The data link layer divides the stream of bits received from the network
+layer into manageable data units called
+frames
+.
+❑
+Physical addressing.
+If frames are to be distributed to different systems on the
+network, the data link layer adds a header to the frame to define the sender and/or
+receiver of the frame. If the frame is intended for a system outside the sender’s
+network, the receiver address is the address of the connecting device that connects
+the network to the next one.
+❑
+Flow control.
+If the rate at which the data is absorbed by the receiver is less than
+the rate produced at the sender, the data link layer imposes a flow control mecha-
+nism to prevent overwhelming the receiver.
+❑
+Error control.
+The data link layer adds reliability to the physical layer by adding
+mechanisms to detect and retransmit damaged or lost frames. It also uses a mecha-
+nism to recognize duplicate frames. Error control is normally achieved through a
+trailer added to the end of the frame.
+❑
+Access control.
+When two or more devices are connected to the same link, data
+link layer protocols are necessary to determine which device has control over the
+link at any given time.
+Network Layer
+The
+network layer
+is responsible for the source-to-destination delivery of a packet,
+possibly across multiple networks (links). Whereas the data link layer oversees the
+delivery of the packet between two systems on the same network (link), the network
+layer ensures that each packet gets from its point of origin to its final destination.
+If two systems are connected to the same link, there is usually no need for a net-
+work layer. However, if the two systems are attached to different networks (links) with
+connecting devices between the networks (links), there is often a need for the network
+layer to accomplish source-to-destination delivery. Other responsibilities of the net-
+work layer include the following:
+❑
+Logical addressing.
+The physical addressing implemented by the data link layer
+handles the addressing problem locally. If a packet passes the network boundary,
+we need another addressing system to help distinguish the source and destination
+systems. The network layer adds a header to the packet coming from the upper
+layer that, among other things, includes the logical addresses of the sender and
+receiver.
+❑
+Routing.
+When independent networks or links are connected together to create
+internetworks
+(network of networks) or a large network, the connecting devices
+(called
+routers
+or
+switches
+) route or switch the packets to their final destination.
+One of the functions of the network layer is to provide this mechanism.
+26
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Transport Layer
+The
+transport layer
+is responsible for
+process-to-process
+delivery
+of the entire mes-
+sage. A process is an application program running on the host. Whereas the network
+layer oversees
+source-to-destination delivery
+of individual packets, it does not recog-
+nize any relationship between those packets. It treats each one independently, as though
+each piece belonged to a separate message, whether or not it does. The transport layer,
+on the other hand, ensures that the whole message arrives intact and in order, oversee-
+ing both error control and flow control at the source-to-destination level. Other respon-
+sibilities of the transport layer include the following:
+❑
+Service-point addressing.
+Computers often run several programs at the same
+time. For this reason, source-to-destination delivery means delivery not only from
+one computer to the next but also from a specific process (running program) on
+one computer to a specific process (running program) on the other. The transport
+layer header must therefore include a type of address called a
+service-point
+address
+(or port address). The network layer gets each packet to the correct com-
+puter; the transport layer gets the entire message to the correct process on that
+computer.
+❑
+Segmentation and reassembly.
+A message is divided into transmittable segments,
+with each segment containing a sequence number. These numbers enable the trans-
+port layer to reassemble the message correctly upon arriving at the destination and
+to identify and replace packets that were lost in transmission.
+❑
+Connection control.
+The transport layer can be either connectionless or connection-
+oriented. A connectionless transport layer treats each segment as an independent
+packet and delivers it to the transport layer at the destination machine. A connection-
+oriented transport layer makes a connection with the transport layer at the destina-
+tion machine first before delivering the packets. After all the data are transferred,
+the connection is terminated.
+❑
+Flow control.
+Like the data link layer, the transport layer is responsible for flow
+control. However, flow control at this layer is performed end to end rather than
+across a single link.
+❑ Error control. Like the data link layer, the transport layer is responsible for error
+control. However, error control at this layer is performed process-to-process rather
+than across a single link. The sending transport layer makes sure that the entire
+message arrives at the receiving transport layer without error (damage, loss, or
+duplication). Error correction is usually achieved through retransmission.
+Session Layer
+The services provided by the first four layers (physical, data link, network and transport)
+are not sufficient for some processes. The session layer is the network dialog controller.
+It establishes, maintains, and synchronizes the interaction between communicating
+systems. Specific responsibilities of the session layer include the following:
+❑ Dialog control. The session layer allows two systems to enter into a dialog. It
+allows the communication between two processes to take place in either half-
+duplex (one way at a time) or full-duplex (two ways at a time) mode.
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE 27
+❑ Synchronization. The session layer allows a process to add checkpoints (synchro-
+nization points) into a stream of data. For example, if a system is sending a file of
+2,000 pages, it is advisable to insert checkpoints after every 100 pages to ensure
+that each 100-page unit is received and acknowledged independently. In this case,
+if a crash happens during the transmission of page 523, the only pages that need to
+be resent after system recovery are pages 501 to 523. Pages previous to 501 need
+not be resent.
+Presentation Layer
+The presentation layer is concerned with the syntax and semantics of the information
+exchanged between two systems. Specific responsibilities of the presentation layer
+include the following:
+❑ Translation. The processes (running programs) in two systems are usually exchang-
+ing information in the form of character strings, numbers, and so on. The informa-
+tion should be changed to bit streams before being transmitted. Because different
+computers use different encoding systems, the presentation layer is responsible for
+interoperability between these different encoding methods. The presentation layer
+at the sender changes the information from its sender-dependent format into a
+common format. The presentation layer at the receiving machine changes the com-
+mon format into its receiver-dependent format.
+❑ Encryption. To carry sensitive information a system must be able to assure pri-
+vacy. Encryption means that the sender transforms the original information to
+another form and sends the resulting message out over the network. Decryption
+reverses the original process to transform the message back to its original form.
+❑ Compression. Data compression reduces the number of bits contained in the
+information. Data compression becomes particularly important in the transmission
+of multimedia such as text, audio, and video.
+Application Layer
+The application layer enables the user, whether human or software, to access the net-
+work. It provides user interfaces and support for services such as electronic mail,
+remote file access and transfer, shared database management, and other types of distrib-
+uted information services. Specific services provided by the application layer include
+the following:
+❑ Network virtual terminal. A network virtual terminal is a software version of a
+physical terminal and allows a user to log on to a remote host. To do so, the appli-
+cation creates a software emulation of a terminal at the remote host. The user’s
+computer talks to the software terminal, which, in turn, talks to the host, and vice
+versa. The remote host believes it is communicating with one of its own terminals
+and allows you to log on.
+❑ File transfer, access, and management (FTAM). This application allows a user
+to access files in a remote host (to make changes or read data), to retrieve files from
+a remote computer for use in the local computer, and to manage or control files in a
+remote computer locally.
+28 PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+❑ E-mail services. This application provides the basis for e-mail forwarding and
+storage.
+❑ Directory services. This application provides distributed database sources and
+access for global information about various objects and services.
+Summary of OSI Layers
+Figure 2.6 shows a summary of duties for each layer. In the next section, we describe
+how some of these duties are mixed and spread into five categories in the TCP/IP proto-
+col suite.
+2.3 TCP/IP PROTOCOL SUITE
+The TCP/IP protocol suite was developed prior to the OSI model. Therefore, the
+layers in the TCP/IP protocol suite do not match exactly with those in the OSI model.
+The original TCP/IP protocol suite was defined as four software layers built upon the
+hardware. Today, however, TCP/IP is thought of as a five-layer model with the layers
+named similarly to the ones in the OSI model. Figure 2.7 shows both configurations.
+Comparison between OSI and TCP/IP Protocol Suite
+When we compare the two models, we find that two layers, session and presentation,
+are missing from the TCP/IP protocol suite. These two layers were not added to the
+TCP/IP protocol suite after the publication of the OSI model. The application layer in
+the suite is usually considered to be the combination of three layers in the OSI model,
+as shown in Figure 2.8.
+Figure 2.6 Summary of OSI layers
+Physical
+To transmit bits over a medium; to provide
+mechanical and electrical specifications
+Data link
+To organize bits into frames; to provide
+hop-to-hop delivery
+Application To allow access to network resources
+Session To establish, manage, and terminate sessions
+Presentation To translate, encrypt, and compress data
+To move packets from source to destination;
+to provide internetworking
+Network
+To provide reliable process-to-process
+message delivery and error recovery
+Transport
+1
+2
+7
+5
+6
+3
+4
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE 29
+Two reasons were mentioned for this decision. First, TCP/IP has more than one
+transport-layer protocol. Some of the functionalities of the session layer are available in
+some of the transport layer protocols. Second, the application layer is not only one
+piece of software. Many applications can be developed at this layer. If some of the
+functionalities mentioned in the session and presentation are needed for a particular
+application, it can be included in the development of that piece of software.
+TCP/IP is a hierarchical protocol made up of interactive modules, each of which
+provides a specific functionality, but the modules are not necessarily interdependent.
+Whereas the OSI model specifies which functions belong to each of its layers, the lay-
+ers of the TCP/IP protocol suite contain relatively independent protocols that can be
+mixed and matched, depending on the needs of the system. The term hierarchical
+means that each upper level protocol is supported by one or more lower level protocols.
+Figure 2.7 Layers in the TCP/IP Protocol Suite
+Figure 2.8 TCP/IP and OSI model
+Application
+Internet
+Network Interface
+Hardware Devices Layer 1
+a. Original layers b. Layers used in this book
+Layer 2
+Layer 3
+Layer 4
+Layer 5
+Transport
+Application
+Network
+Data Link
+Physical
+Transport
+Physical
+Physical
+OSI Model
+TCP/IP Protocol Suite
+Underlying
+LAN and WAN
+technology
+Internet Protocol
+and some helping
+protocols
+Several transport
+protocols
+Several application
+protocols
+Session
+Presentation
+Application
+Application
+Data link
+Data link
+Network Network
+Transport Transport
+30 PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+Layers in the TCP/IP Protocol Suite
+In this section, we briefly discuss the purpose of each layer in the TCP/IP protocol suite.
+When we study the purpose of each layer, it is easier to think of a private internet,
+instead of the global Internet. We assume that we want to use the TCP/IP suite in a small,
+private internet. Such an internet is made up of several small networks, which we call
+links. A link is a network that allows a set of computers to communicate with each other.
+For example, if all computers in an office are wired together, the connection makes a
+link. If several computers belonging to a private company are connected via a satellite
+channel, the connection is a link. A link, as we discussed in Chapter 3, can be a LAN
+(local area network) serving a small area or a WAN (wide area network) serving a larger
+area. We also assume that different links are connected together by devices called rout-
+ers or switches that route the data to reach their final destinations. Figure 2.9 shows our
+imaginary internet that is used to show the purpose of each layer. We have six links and
+four routers (R1 to R4). We have shown only two computers, A and B.
+Physical Layer
+TCP/IP does not define any specific protocol for the physical layer. It supports all of the
+standard and proprietary protocols. At this level, the communication is between two hops
+or nodes, either a computer or router. The unit of communication is a single bit. When the
+connection is established between the two nodes, a stream of bits is flowing between
+them. The physical layer, however, treats each bit individually. Figure 2.10 shows the
+communication between nodes. We are assuming that at this moment the two computers
+have discovered that the most efficient way to communicate with each other is via routers
+R1, R3, and R4. How this decision is made is the subject of some future chapters.
+Note that if a node is connected to n links, it needs n physical-layer protocols, one for
+each link. The reason is that different links may use different physical-layer protocols. The
+figure, however, shows only physical layers involved in the communication. Each com-
+puter involves with only one link; each router involves with only two links. As Figure 2.10
+shows, the journey of bits between computer A and computer B is made of four indepen-
+dent short trips. Computer A sends each bit to router R1 in the format of the protocol used
+by link 1. Router 1 sends each bit to router R3 in the format dictated by the protocol used
+by link 3. And so on. Router R1 has two three physical layers (two are shown in our sce-
+nario). The layer connected to link 1 receives bits according to the format of the protocol
+Figure 2.9 A private internet
+Link 1
+A
+R1
+R2
+R3
+R4
+B
+Link 2
+Link 3
+Link 5
+Link 4
+Link 6
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE
+31
+used by link 1; the layer connected to link 3 sends bits according to the format of the proto-
+col used by link 3. It is the same situation with the other two routers involved in the
+communication.
+The responsibility of the physical layer, in addition to delivery of bits, matches
+with what mentioned for the physical layer of the OSI model, but it mostly depends on
+the underlying technologies that provide links. We see in the next chapter that they are,
+for example, many protocols for the physical layer of LANs or WANs.
+Data Link Layer
+TCP/IP does not define any specific protocol for the data link layer either. It supports
+all of the standard and proprietary protocols. At this level, the communication is also
+between two hops or nodes. The unit of communication however, is a packet called a
+frame
+. A frame is a packet that encapsulates the data received from the network layer
+with an added header and sometimes a trailer. The head, among other communication
+information, includes the source and destination of frame. The destination address is
+needed to define the right recipient of the frame because many nodes may have been
+connected to the link. The source address is needed for possible response or acknowl-
+edgment as may be required by some protocols. Figure 2.11 shows the communication
+at the data link layer.
+Note that the frame that is travelling between computer A and router R1 may be
+different from the one travelling between router R1 and R3. When the frame is received
+by router R1, this router passes the frame to the data link layer protocol shown at the
+left. The frame is opened, the data are removed. The data are then passed to the data
+Figure 2.10
+Communication at the physical layer
+The unit of communication at the physical layer is a bit.
+A
+Physical
+layer
+Physical
+layer
+R1 R3 R4 B
+Link 3 Link 5 Link 6 Link 1
+Link 1
+011 ... 101
+011 ... 101
+011 . 101
+Source Destination Legend
+A
+R1
+R2
+R3
+R4
+B
+Link 2
+Link 3
+Link 5
+Link 4
+Link 6
+011 ... 101
+32 PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+link layer protocol shown at the right to create a new frame to be sent to the router R3.
+The reason is that the two links, link 1 and link 3, may be using different protocols and
+require frames of different formats. Note also that the figure does not show the physical
+movement of frames; the physical movement happens only at the physical layer. The
+two nodes communicate logically at the data link layer, not physically. In other words,
+the data link layer at router R1 only thinks that a frame has been sent directly from the
+data link layer at computer A. What is sent from A to R1 is a stream of bits from one
+physical layer to another. Since a frame at A is transformed to a stream of bits, and the
+bits at R1 are transformed to a frame, it gives this impression to the two data link layer
+that a frame has been exchanged.
+Network Layer
+At the network layer (or, more accurately, the internetwork layer), TCP/IP supports the
+Internet Protocol (IP). The Internet Protocol (IP) is the transmission mechanism used
+by the TCP/IP protocols. IP transports data in packets called datagrams, each of which
+is transported separately. Datagrams can travel along different routes and can arrive out
+of sequence or be duplicated. IP does not keep track of the routes and has no facility for
+reordering datagrams once they arrive at their destination. Figure 2.12 shows the com-
+munication at the network layer.
+Note that there is a main difference between the communication at the network
+layer and the communication at data link or physical layers. Communication at the
+Figure 2.11 Communication at the data link layer
+The unit of communication at the data link layer is a frame.
+A
+Physical Physical
+Data link Data link
+R1 R3 R4 B
+Link 3 Link 5 Link 6 Link 1
+Frame
+Frame
+Frame
+D2 H2
+D2 H2
+Frame
+D2 H2
+Source Destination Data D Header H Legend
+Link 1
+A
+R1
+R2
+R3
+R4
+B
+Link 2
+Link 3
+Link 5
+Link 4
+Link 6
+D2 H2
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE
+33
+network layer is end to end while the communication at the other two layers are node to
+node. The datagram started at computer A is the one that reaches computer B. The net-
+work layers of the routers can inspect the source and destination of the packet for find-
+ing the best route, but they are not allowed to change the contents of the packet. Of
+course, the communication is logical, not physical. Although the network layer of com-
+puter A and B
+think
+that
+they are sending and receiving datagrams, the actual communi-
+cation again is done at the physical level.
+Transport Layer
+There is a main difference between the transport layer and the network layer.
+Although all nodes in a network need to have the network layer, only the two end
+computers need to have the transport layer. The network layer is responsible for send-
+ing individual datagrams from computer A to computer B; the transport layer is
+responsible for delivering the whole message, which is called a segment, a user data-
+gram, or a packet, from A to B. A segment may consist of a few or tens of datagrams.
+The segments need to be broken into datagrams and each datagram has to be deliv-
+ered to the network layer for transmission. Since the Internet defines a different route
+for each datagram, the datagrams may arrive out of order and may be lost. The trans-
+port layer at computer B needs to wait until all of these datagrams to arrive, assemble
+Figure 2.12
+Communication at the network layer
+The unit of communication at the network layer is a datagram.
+A
+Physical Physical
+Data link Data link
+R1 R3 R4 B
+Network Network
+Datagram
+D3 H3
+Datagram
+D3 H3
+Source Destination Data D Header H Legend
+Link 1
+A
+R1
+R2
+R3
+R4
+B
+Link 2
+Link 3
+Link 5
+Link 4
+Link 6
+34
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
+them and make a segment out of them. Figure 2.13 shows the communication at the
+transport layer.
+Again, we should know that the two transport layers only think that they are com-
+municating with each other using a segment; the communication is done through the
+physical layer and the exchange of bits.
+Traditionally, the transport layer was represented in the TCP/IP suite by two proto-
+cols:
+User Datagram Protocol (UDP)
+and
+Transmission Control Protocol (TCP)
+. A
+new protocol called
+Stream Control Transmission Protocol (SCTP)
+has been intro-
+duced in the last few years.
+Application Layer
+The application layer in TCP/IP is equivalent to the combined session, presentation, and
+application layers in the OSI model. The application layer allows a user to access the ser-
+vices of our private internet or the global Internet. Many protocols are defined at this layer
+to provide services such as electronic mail, file transfer, accessing the World Wide Web,
+and so on. We cover most of the standard protocols in later chapters. Figure 2.14 shows
+the communication at the application layer.
+Figure 2.13
+Communication at the transport layer
+The unit of communication at the transport layer is a segment, user datagram, or a
+packet, depending on the specific protocol used in this layer.
+A
+Physical Physical
+Data link Data link
+R1 R3 R4
+B
+Network Network
+Transport Transport
+Segment
+D4 H4
+Segment
+D4 H4
+Source Destination Data D Header H Legend
+Link 1
+A
+R1
+R2
+R3
+R4
+B
+Link 2
+Link 3
+Link 5
+Link 4
+Link 6
+CHAPTER 2 THE OSI MODEL AND THE TCP/IP PROTOCOL SUITE 35
+Note that the communication at the application layer, like the one at the transport
+layer, is end to end. A message generated at computer A is sent to computer B without
+being changed during the transmission.
+2.4 ADDRESSING
+Four levels of addresses are used in an internet employing the TCP/IP protocols: phys-
+ical address, logical address, port address, and application-specific address. Each
+address is related to a one layer in the TCP/IP architecture, as shown in Figure 2.15.
+Physical Addresses
+The physical address, also known as the link address, is the address of a node as defined
+by its LAN or WAN. It is included in the frame used by the data link layer. It is the
+lowest-level address. The physical addresses have authority over the link (LAN or
+WAN). The size and format of these addresses vary depending on the network. For
+example, Ethernet uses a 6-byte (48-bit) physical address that is imprinted on the net-
+work interface card (NIC). LocalTalk (Apple), however, has a 1-byte dynamic address
+that changes each time the station comes up.
+Figure 2.14 Communication at the application layer
+The unit of communication at the application layer is a message.
+A
+Physical Physical
+Data link Data link
+R1 R3 R4
+B
+Network Network
+Transport Transport
+Application Application
+Message
+D5 D5
+D5 D5
+Message
+Source Destination Data D Header H Legend
+Link 1
+A
+R1
+R2
+R3
+R4
+B
+Link 2
+Link 3
+Link 5
+Link 4
+Link 6
+36
+PART 1 INTRODUCTION AND UNDERLYING TECHNOLOGIES
